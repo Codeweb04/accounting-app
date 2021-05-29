@@ -1,0 +1,38 @@
+{
+  "name": "money-lending-accounts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "More Software",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.4",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "ejs-electron": "^2.1.1",
+    "electron-packager": "^15.1.0",
+    "express": "^4.17.1",
+    "ftp": "^0.3.10",
+    "mongoose": "^5.10.9",
+    "nodemailer": "^6.4.14"
+  },
+  "build": {
+    "appId": "com.moresw.lendingaccount",
+    "productName": "Money Lending Accounting Software",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}

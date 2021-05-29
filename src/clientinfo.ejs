@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="updaterecord.js"></script>
+    <title>Payment Entry</title>
+</head>
+<body class="form-group">
+    <a href="index.ejs">Home</a>
+    <div id="info">
+    </div>
+    <h1 id="client-name"></h1>
+    <p style="font-size: large;">Agent Name:</p>
+    <span><p id="agent-name"></p></span>
+    <p style="font-size: large;">Phone Number:</p>
+    <span><p id="phone-number"></p></span>
+    <p style="font-size: large;">Adress:</p>
+    <span><p id="address"></p></span>
+    <p style="font-size: large;">Email Address</p>
+    <span><p id="email"></p></span>
+    <p style="font-size: large;">Amount lent</p>
+    <span><p id="amount"></p></span>
+    <p style="font-size: large;">At interest rate:</p>
+    <span><p id="interest-rate"></p></span>
+    <p style="font-size: large;">To be paid on or before:</p>
+    <span><p id="due-date"></p></span>
+    <p style="font-size: large;">Total amount to be paid:</p>
+    <span><p id="total-amount"></p></span>
+    <p style="font-size: large;">Balance:</p>
+    <span><p id="balance"></p></span>
+    </div>
+    <div id="make-payment">
+        <input id="payment-entry" type="number">
+        <button id="payment-entry-btn" class="btn-success">Make Payment</button>
+        <input id="fine-input" type="number">
+        <button id="fine-btn" class="btn-danger">Fine</button>
+    </div>
+    <div>
+    <p style="font-size: large;">Days Remaining:</p>
+    <span><p id="total-days"></p></span>    
+    </div>
+</body>
+</html>

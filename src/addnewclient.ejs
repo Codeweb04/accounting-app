@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="newclient.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>New Client</title>
+</head>
+<body class="form-group">
+    <h1>Create Client</h1>
+    <form>
+        <a href="index.ejs">Home</a>
+        <div class="form-group">
+            <h4>Personal info</h4>
+            <label>Name</label>
+            <input required type="text" id="client-name">
+            <label>Phone Number</label>
+            <input type="tel" id="phone-number" required>
+            <br>
+            <label>Address</label>
+            <br>
+            <textarea required id="address" cols="30" rows="10"></textarea>
+            <br>
+            <label>Email </label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <h4>Loan Details</h4>
+            <label>Amount</label>
+            <input type="number" id="amount" required>
+            <label>Interest rate</label>
+            <input type="number" id="interest-rate" required>
+            <label>Due date</label>
+            <input type="date" id="due-date" required>
+            <label>Agent</label>
+            <input type="text" id="agent-name">
+        </div>
+    </form>
+    <p>Total Amount to pe paid:</p>
+    <span><p id="total-payment"></p></span>
+    <p>Number of days:</p>
+    <span><p id="total-days"></p></span>
+    <button id="create-client" class="btn-success">Create</button>
+</body> 
+</html>
