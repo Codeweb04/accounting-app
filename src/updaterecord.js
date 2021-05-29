@@ -1,3 +1,4 @@
+require('dotenv').config
 var nodemailer = require('nodemailer')
 const fs = require('fs')
 const path = require('path')
@@ -10,8 +11,8 @@ var transporter = nodemailer.createTransport({
     requireTLS: true,
     service: 'gmail',
     auth: {
-        user: '',
-        pass: ''
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
     }
 })
 
